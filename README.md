@@ -1,4 +1,4 @@
-# DS-H 启动器 (DS-H Launcher)
+# deepseek-harness Launcher
 
 一个 macOS 原生小工具：双击即可启动 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）的 Web UI，并自动在默认浏览器打开。
 
@@ -26,8 +26,8 @@
 ### 方式二：从源码构建
 
 ```bash
-git clone https://github.com/<your-name>/ds-h-launcher.git
-cd ds-h-launcher
+git clone https://github.com/ZhengQingJing/deepseek-harness-launcher.git
+cd deepseek-harness-launcher
 ./build.sh
 # 产物在 dist/ 目录
 ```
@@ -62,7 +62,7 @@ python3 assets/make-icon.py
 ## 项目结构
 
 ```
-ds-h-launcher/
+deepseek-harness-launcher/
 ├── src/main.swift      # App 源码（含内嵌启动脚本）
 ├── assets/             # 图标资源与生成脚本
 ├── Info.plist          # app bundle 元信息
