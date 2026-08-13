@@ -17,7 +17,7 @@
 ### 方式一：直接下载（推荐）
 
 1. 到 [Releases](../../releases) 下载最新的 `DS-H-Launcher-*.zip`。
-2. 解压，把 `DS-H 启动器.app` 拖进 `应用程序`（Applications）。
+2. 解压，把 `DS-H Launcher.app` 拖进 `应用程序`（Applications）。
 3. 双击打开。
 
 > **首次打开提示**：因为 App 未经过 Apple 付费开发者签名，macOS 可能拦截。

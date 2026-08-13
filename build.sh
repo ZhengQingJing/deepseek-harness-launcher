@@ -9,7 +9,7 @@
 #
 set -euo pipefail
 
-APP_NAME="DS-H 启动器"
+APP_NAME="DS-H Launcher"
 BIN_NAME="DS-H-Launcher"
 VERSION="${VERSION:-1.0.0}"
 OUT_DIR="dist"

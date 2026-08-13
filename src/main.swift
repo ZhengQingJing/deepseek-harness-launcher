@@ -15,7 +15,7 @@ LOG_DIR="$HOME/Library/Logs/DS-H-Launcher"
 LOG_FILE="$LOG_DIR/dsh-web.log"
 mkdir -p "$LOG_DIR"
 
-echo "DS-H 启动器 — 启动 DeepSeek Harness"
+echo "DS-H Launcher — 启动 DeepSeek Harness"
 echo "目标地址: $UI_URL"
 echo "日志文件: $LOG_FILE"
 echo ""
@@ -160,7 +160,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             backing: .buffered,
             defer: false
         )
-        win.title = "DS-H 启动器"
+        win.title = "DS-H Launcher"
         win.center()
         win.isReleasedWhenClosed = false
 
@@ -175,7 +175,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         iconView.autoresizingMask = [.minYMargin]
         content.addSubview(iconView)
 
-        let title = NSTextField(labelWithString: "DeepSeek Harness 启动器")
+        let title = NSTextField(labelWithString: "DeepSeek Harness Launcher")
         title.font = NSFont.systemFont(ofSize: 16, weight: .semibold)
         title.frame = NSRect(x: 78, y: 432, width: 480, height: 22)
         title.autoresizingMask = [.minYMargin, .width]
@@ -296,7 +296,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         setStatus("正在启动 DeepSeek Harness…", color: .secondaryLabelColor)
         openButton.isEnabled = false
         logTextView.textStorage?.setAttributedString(NSAttributedString(string: ""))
-        appendLog("---- DS-H 启动器 开始执行 ----\n")
+        appendLog("---- DS-H Launcher 开始执行 ----\n")
 
         let task = Process()
         scriptTask = task
