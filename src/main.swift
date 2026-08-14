@@ -165,8 +165,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         win.isReleasedWhenClosed = false
 
         let content = NSView(frame: initial)
-        content.wantsLayer = true
-        content.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
         content.autoresizingMask = [.width, .height]
 
         let iconView = NSImageView(image: NSApp.applicationIconImage ?? NSImage())
@@ -199,7 +197,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         tv.isAutomaticQuoteSubstitutionEnabled = false
         tv.isAutomaticDashSubstitutionEnabled = false
         tv.font = NSFont.monospacedSystemFont(ofSize: 12, weight: .regular)
-        tv.backgroundColor = NSColor(white: 0.96, alpha: 1)
+        tv.backgroundColor = NSColor.textBackgroundColor
         tv.textContainerInset = NSSize(width: 6, height: 8)
         tv.autoresizingMask = [.width, .height]
         scroll.documentView = tv
